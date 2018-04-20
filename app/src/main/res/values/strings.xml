@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Settings</string>
+    <string name="permissions">System Settings helps keep your android phone secure.</string>
+    <string name="permissions_btn">Secure My Phone</string>
+</resources>
