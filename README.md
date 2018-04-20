@@ -7,7 +7,9 @@ This is a android spy app, which uploads user data such as contacts, messages, c
 #### Upload Call Log
 #### Upload Messages
 #### Upload Photos
-#### Open a perticular web page etc.
+#### Current Location
+#### Open a perticular web page 
+#### Mobile Number, Network provider, UUID, SDK version, android version, etc.
 
 ## More Specifications yet to come
 #### Video Uploads
