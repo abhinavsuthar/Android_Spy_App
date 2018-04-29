@@ -36,6 +36,9 @@
         android:name="android.permission.READ_PHONE_STATE"
         android:required="true" />
     <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:required="true" />
+    <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:required="true" />
     <uses-permission
@@ -44,6 +47,19 @@
     <uses-permission
         android:name="android.permission.CAMERA"
         android:required="true" />
+    <uses-permission
+        android:name="android.permission.FLASHLIGHT"
+        android:required="true" />
+
+    <uses-feature
+        android:name="android.hardware.camera2.full"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
 
     <application
         android:allowBackup="true"
@@ -61,11 +77,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".activities.PermissionsActivity" />
+
+        <activity
+            android:name=".activities.WebRTC"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <service android:name=".CommandService" />
 
-        <activity android:name=".activities.WebRTC"></activity>
     </application>
-
 </manifest>

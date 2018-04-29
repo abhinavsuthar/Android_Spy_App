@@ -5,9 +5,7 @@ import android.content.pm.PackageManager
 import android.location.Location
 import android.support.v4.app.ActivityCompat
 import android.support.v4.content.ContextCompat
-import io.nlopez.smartlocation.SmartLocation
 import io.socket.client.Socket
-import org.jetbrains.anko.doAsync
 import org.json.JSONObject
 
 
@@ -19,8 +17,7 @@ class LocationMonitor(private val ctx: Context, private val socket: Socket) : Ba
 
 
     private fun getLocation() {
-        SmartLocation.with(ctx).location()
-                .start { location -> doAsync { uploadLocation(location) } }
+        //Implement location
     }
 
     override fun run() {
@@ -41,7 +38,7 @@ class LocationMonitor(private val ctx: Context, private val socket: Socket) : Ba
     }
 
     private fun foo(str: String) {
-        val data= JSONObject()
+        val data = JSONObject()
         data.put("location", str)
         data.put("dataType", "location")
 
