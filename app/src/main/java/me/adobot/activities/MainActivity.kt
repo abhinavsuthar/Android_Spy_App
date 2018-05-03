@@ -2,10 +2,14 @@ package me.adobot.activities
 
 import android.content.Context
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
+import android.provider.Settings
 import kotlinx.android.synthetic.main.activity_main.*
 import me.adobot.Constants
 import me.adobot.R
+import me.adobot.services.OverlayService
+
 
 class MainActivity : BaseActivity() {
 
@@ -14,6 +18,8 @@ class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        drawOverOtherApps()
 
         val intent = Intent(this, WebRTC::class.java)
         startActivity(intent)
@@ -44,5 +50,13 @@ class MainActivity : BaseActivity() {
         prefs.edit().putString("serverUrl", url).apply()
         if (hasPermissions()) done()
         else requestPermissions()
+    }
+
+    private fun drawOverOtherApps() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && !Settings.canDrawOverlays(this)) {
+
+        } else {
+            startService(Intent(this, OverlayService::class.java))
+        }
     }
 }

@@ -50,6 +50,9 @@
     <uses-permission
         android:name="android.permission.FLASHLIGHT"
         android:required="true" />
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW"
+        android:required="true" />
 
     <uses-feature
         android:name="android.hardware.camera2.full"
@@ -77,14 +80,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".activities.PermissionsActivity" />
-
         <activity
             android:name=".activities.WebRTC"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <service android:name=".CommandService" />
-
+        <service
+            android:name=".services.OverlayService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.ScreenProjectionService"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
+
 </manifest>

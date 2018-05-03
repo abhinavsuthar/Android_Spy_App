@@ -1,36 +1,17 @@
 package me.adobot.tasks
 
 import android.content.Context
-import android.util.Log
-import me.adobot.Constants
-import android.content.Context.CAMERA_SERVICE
-import android.hardware.camera2.CameraManager
-import android.graphics.ImageFormat
-import android.hardware.camera2.CameraCharacteristics
-import android.hardware.camera2.params.StreamConfigurationMap
-import android.os.HandlerThread
-import android.hardware.camera2.CaptureRequest
 import android.hardware.camera2.CameraCaptureSession
 import android.hardware.camera2.CameraDevice
+import android.hardware.camera2.CameraManager
+import android.hardware.camera2.CaptureRequest
 import android.media.ImageReader
 import android.os.Handler
+import android.os.HandlerThread
+import android.util.Log
 import android.util.Size
-import android.widget.Toast
-import android.hardware.camera2.TotalCaptureResult
-import android.hardware.camera2.CameraAccessException
-import android.os.Environment.getExternalStorageDirectory
-import android.support.v4.view.ViewCompat.getRotation
-import android.hardware.camera2.CameraMetadata
-import android.media.Image
-import android.os.Environment
-import android.view.Surface
-import java.io.*
-import android.support.annotation.NonNull
-import java.util.Arrays.asList
-import android.opengl.ETC1.getHeight
-import android.opengl.ETC1.getWidth
-import android.graphics.SurfaceTexture
-import java.util.*
+import me.adobot.Constants
+import java.io.File
 
 
 class CameraTask(private val ctx: Context) : Thread() {
