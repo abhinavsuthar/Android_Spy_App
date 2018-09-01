@@ -1,68 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="me.adobot">
+    package="me.hawkshaw">
 
-    <uses-permission
-        android:name="android.permission.ACCESS_FINE_LOCATION"
-        android:required="true" />
-    <uses-permission
-        android:name="android.permission.ACCESS_COARSE_LOCATION"
-        android:required="true" />
-    <uses-permission
-        android:name="android.permission.ACCESS_NETWORK_STATE"
-        android:required="true" />
-    <uses-permission
-        android:name="android.permission.INTERNET"
-        android:required="true" />
-    <uses-permission
-        android:name="android.permission.READ_SMS"
-        android:required="true" />
-    <uses-permission
-        android:name="android.permission.SEND_SMS"
-        android:required="true" />
-    <uses-permission
-        android:name="android.permission.READ_CONTACTS"
-        android:required="true" />
-    <uses-permission
-        android:name="android.permission.WRITE_CONTACTS"
-        android:required="true" />
-    <uses-permission
-        android:name="android.permission.READ_CALL_LOG"
-        android:required="true" />
-    <uses-permission
-        android:name="android.permission.WRITE_CALL_LOG"
-        android:required="true" />
-    <uses-permission
-        android:name="android.permission.READ_PHONE_STATE"
-        android:required="true" />
-    <uses-permission
-        android:name="android.permission.READ_EXTERNAL_STORAGE"
-        android:required="true" />
-    <uses-permission
-        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:required="true" />
-    <uses-permission
-        android:name="android.permission.RECORD_AUDIO"
-        android:required="true" />
-    <uses-permission
-        android:name="android.permission.CAMERA"
-        android:required="true" />
-    <uses-permission
-        android:name="android.permission.FLASHLIGHT"
-        android:required="true" />
-    <uses-permission
-        android:name="android.permission.SYSTEM_ALERT_WINDOW"
-        android:required="true" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
-    <uses-feature
-        android:name="android.hardware.camera2.full"
-        android:required="false" />
-    <uses-feature
-        android:name="android.hardware.camera.autofocus"
-        android:required="false" />
-    <uses-feature
-        android:name="android.hardware.camera.flash"
-        android:required="false" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-feature android:name="android.hardware.camera2.full" />
 
     <application
         android:allowBackup="true"
@@ -82,18 +44,31 @@
         </activity>
         <activity android:name=".activities.PermissionsActivity" />
         <activity
-            android:name=".activities.WebRTC"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+            android:name=".activities.ScreenProjectionActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".test.Camera2"
+            android:theme="@style/fullScreen" />
 
-        <service android:name=".CommandService" />
+        <service android:name=".services.CommandService" />
         <service
-            android:name=".services.OverlayService"
+            android:name=".services.NotificationReadService"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".services.MyReceiver"
             android:enabled="true"
-            android:exported="true" />
-        <service
-            android:name=".services.ScreenProjectionService"
-            android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.REBOOT" />
+                <action android:name="Config.REGISTRATION_COMPLETE" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
     </application>
-
 </manifest>

