@@ -1,4 +1,39 @@
-# Android_Spy_App
+# Android RAT
+
+This repository is not maintained :- 
+
+For purchase/queries, email me at gupta.10@iitj.ac.in
+
+# Features :-
+
+### Optimised for android 9!
+### Fully Hidden
+### Camera
+### Storage
+### SMS
+### CALL
+### Whatsapp Reader
+### Instagram Reader
+### Messenger Reader
+### Gmail Reader
+### Tinder Reader
+### Contact
+### Browser History
+### App Manager
+### GPS Location
+### Microphone
+### Do a toast
+### Send a text message
+### Give call
+### Open an URL in the default browser
+### Do vibrate the phone
+### Explore Files with full access.
+
+Web Interface is available
+
+
+
+
 This is a android spy app, which uploads user data such as contacts, messages, call log, send message(s), photos, videos, open a browser link etc.
 
 Read more here https://students.iitj.ac.in/blog/2018/04/29/android-spy-app-with-socket-io-and-node-js/
