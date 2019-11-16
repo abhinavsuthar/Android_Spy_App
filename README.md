@@ -4,7 +4,7 @@ This repository is not maintained :-
 
 For purchase/queries, email me at gupta.10@iitj.ac.in
 
-![Screenshot](https://raw.githubusercontent.com/saksham2410/Android-RAT---Hawkshaw/blob/master/Screenshot%20from%202019-09-15%2001-46-16.png)
+![Screenshot](Screenshot%20from%202019-09-15%2001-46-16.png)
 
 # Features :-
 
