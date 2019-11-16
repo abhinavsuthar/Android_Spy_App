@@ -6,6 +6,10 @@ For purchase/queries, email me at gupta.10@iitj.ac.in
 
 ![Screenshot](Screenshot%20from%202019-09-15%2001-46-16.png)
 
+![Screenshot](Screenshot%20from%202019-09-15%2001-46-29.png)
+
+![Screenshot](Screenshot%20from%202019-09-15%2001-46-34.png)
+
 # Features :-
 
 ### Optimised for android 9!
