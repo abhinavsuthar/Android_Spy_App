@@ -1,9 +1,11 @@
 # Android RAT
 
-This repository is not maintained :- 
+This is just a demo repository :-
 
-For purchase/queries, email me at gupta.10@iitj.ac.in
+Full code is deployed at https://hawkshawspy.com
 
+For subscription/queries, email me at gupta.10@iitj.ac.in
+or
 Telegram :- @hawkshaw02
 
 ![Screenshot](Screenshot%20from%202019-09-15%2001-46-16.png)
