@@ -6,8 +6,7 @@ This is a android spy app, android remote administration tool, android RAT which
 
 Full code is deployed at https://hawkshawspy.com
 
-For subscription/queries, email me at gupta.10@iitj.ac.in
-or
+For subscription/queries,
 Telegram :- @hawkshaw02
 
 ![Screenshot](Screenshot%20from%202019-09-15%2001-46-16.png)
