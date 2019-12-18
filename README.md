@@ -67,10 +67,9 @@ So please test my new version of android spy app, with more capabilities and sta
 #### Mobile Number, Network provider, UUID, SDK version, android version, etc.
 
 ## More Specifications yet to come
-#### Video Uploads
-#### Live camera view
-#### Live screen recording
-#### Take screenshot remotely
+#### Live camera
+#### Whatsapp/Skype VoIP calls
+#### APK Binder/File Encryptor
 
 Android code is written in kotlin
 Website is running on node.js server
