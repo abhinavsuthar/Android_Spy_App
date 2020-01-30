@@ -2,18 +2,14 @@
 
 This is just a demo repository :-
 
-This is a android spy app, android remote administration tool, android RAT which uploads user data such as contacts, messages, call log, send message(s), photos, videos, open a browser link etc. 
+Full code is deployed at https://hawkshawspy.com/
 
-Full code is deployed at https://hawkshawspy.com
-
-For subscription/queries,
+For subscription/queries, 
 Telegram :- @hawkshaw02
 
 ![Screenshot](Screenshot%20from%202019-09-15%2001-46-16.png)
 
 ![Screenshot](Screenshot%20from%202019-09-15%2001-46-29.png)
-
-![Screenshot](Screenshot%202019-12-19%20at%2012.05.26%20AM.png)
 
 ![Screenshot](file3.png)
 
@@ -41,22 +37,6 @@ Telegram :- @hawkshaw02
 ### Open an URL in the default browser
 ### Do vibrate the phone
 ### Explore Files with full access.
-### Many more features
-
-Web Interface is available
-
-
-
-
-This is a android spy app, which uploads user data such as contacts, messages, call log, send message(s), photos, videos, open a browser link etc.
-
-Read more here https://students.iitj.ac.in/blog/2018/04/29/android-spy-app-with-socket-io-and-node-js/
-
-Goto https://hawkshawspy.com which is android spy app(v2.0) front end. And let me know about your views.
-The new version of android spy app is completely build on firebase. So you may not need of any other backend server.
-So please test my new version of android spy app, with more capabilities and stability.
-
-## Specifications
 #### Material Client Side Web Panel
 #### Upload Contacts
 #### Upload Call Log
@@ -65,11 +45,26 @@ So please test my new version of android spy app, with more capabilities and sta
 #### Current Location
 #### Open a perticular web page 
 #### Mobile Number, Network provider, UUID, SDK version, android version, etc.
+#### Video Uploads
+#### Live screen recording
+#### Take screenshot remotely
+### Many more features
+
+
+Web Interface is available
+
+
+This is a android spy app, which uploads user data such as contacts, messages, call log, send message(s), photos, videos, open a browser link etc.
+
+Read more here https://students.iitj.ac.in/blog/2018/04/29/android-spy-app-with-socket-io-and-node-js/
+
+Goto https://hawkshawspy.com which is android spy app(v2.0) front end. And let me know about your views.
+The new version of android spy app is completely built on firebase. So you may not need any other backend server.
+So please test my new version of android spy app, with more capabilities and stability.
+
 
 ## More Specifications yet to come
-#### Live camera
-#### Whatsapp/Skype VoIP calls
-#### APK Binder/File Encryptor
+#### Live camera view
 
 Android code is written in kotlin
 Website is running on node.js server
