@@ -2,11 +2,12 @@
 
 This is just a demo repository :-
 
-Full code is deployed at https://hawkshawspy.com/
+Full code is deployed at https://hawkshawspy.com/  
 Watch video on YouTube at https://www.youtube.com/watch?v=1SKepgCq3tw
 
 For subscription/queries, 
-Telegram :- @hawkshaw02
+Telegram :- https://t.me/hawkshaw02  
+Alternate Telegram: https://t.me/hawkshaw
 
 ![Screenshot](Screenshot%20from%202019-09-15%2001-46-16.png)
 
