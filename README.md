@@ -82,8 +82,5 @@ The new version of android spy app is completely built on firebase. So you may n
 So please test my new version of android spy app, with more capabilities and stability.
 
 
-## More Specifications yet to come
-#### Live camera view
-
 Android code is written in kotlin
 Website is running on node.js server
