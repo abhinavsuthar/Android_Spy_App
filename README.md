@@ -3,7 +3,7 @@
 This is just a demo repository :-
 
 Full code is deployed at [https://hawkshaw.dev/](https://hawkshaw.dev?utm_source=Github&utm_medium=ASP&utm_id=github_1)  
-Watch video on YouTube at https://www.youtube.com/watch?v=cLV7wkES2JQ
+Watch video on YouTube at https://youtu.be/N51fwir8qec
 
 For subscription/queries, 
 Telegram :- https://t.me/hawkshaw  
