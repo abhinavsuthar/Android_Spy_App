@@ -9,7 +9,7 @@ For subscription/queries,
 Telegram :- https://t.me/hawkshaw  
 Alternate Telegram: https://t.me/hawkshaw02
 
-Read: How to create your own spy app [here](https://medium.com/@hawkshawdev/android-spy-app-file-explorer-777f9c79ad3c)
+Read: How to create your own spy app https://medium.com/@hawkshawdev/android-spy-app-file-explorer-777f9c79ad3c  
 More articles will follow
 
 # Features :-
