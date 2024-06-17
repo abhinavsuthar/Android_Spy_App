@@ -5,6 +5,8 @@ This is just a demo repository :-
 Full code is deployed at [https://hawkshaw.dev/](https://hawkshaw.dev?utm_source=Github&utm_medium=ASP&utm_id=github_1)  
 Watch video on YouTube at https://youtu.be/N51fwir8qec
 
+Source code of Hawkshaw is up for sale for $5k, contact me on telegram if interested - https://t.me/hawkshaw
+
 For subscription/queries, 
 Telegram :- https://t.me/hawkshaw  
 Alternate Telegram: https://t.me/hawkshaw02
